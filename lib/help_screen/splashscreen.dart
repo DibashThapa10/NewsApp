@@ -6,21 +6,21 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
         body: Stack(
           children: [
             Container(
               alignment: Alignment.center,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/news_banner.png"),
                 ),
               ),
-              child: Text(
-                'We show News For You',
+              child: const Text(
+                'We show news for you',
                 textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20),
               ),
             ),
             Positioned(
@@ -31,11 +31,17 @@ class SplashScreen extends StatelessWidget {
                   height: 40,
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Hompage()));
-                      },
-                      child: Text('Skip'))),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Hompage()));
+                    },
+                    child: Text('Skip'),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(
+                        Colors.teal,
+                      ),
+                    ),
+                  )),
             )
           ],
         ),
