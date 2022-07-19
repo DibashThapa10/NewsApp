@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/homepage/homepage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -17,30 +18,32 @@ class SplashScreen extends StatelessWidget {
                   image: AssetImage("assets/news_banner.png"),
                 ),
               ),
-              child: const Text(
+              child: Text(
                 'We show news for you',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20),
+                style: GoogleFonts.pacifico(fontSize: 20),
               ),
             ),
             Positioned(
               top: 450,
-              left: 40,
-              right: 40,
+              left: 150,
+              right: 150,
               child: SizedBox(
                   height: 40,
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Hompage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Homepage()));
                     },
-                    child: Text('Skip'),
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
                         Colors.teal,
                       ),
                     ),
+                    child: const Text('Skip'),
                   )),
             )
           ],

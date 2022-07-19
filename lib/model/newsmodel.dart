@@ -1,18 +1,16 @@
 class NewsModel {
-  final int userId;
-  final int id;
-  final String title;
-  final String body;
+  final String headline;
+  final String summary;
+  final String image;
   NewsModel(
-      {required this.userId,
-      required this.id,
-      required this.title,
-      required this.body});
+      {required this.headline,
+      required this.summary,
+      required this.image});
   factory NewsModel.fromJson(Map<String, dynamic> json) {
     return NewsModel(
-        userId: json["userId"],
-        id: json["id"],
-        title: json["title"],
-        body: json["body"]);
+        
+        headline: json["title"],
+        summary: json["description"],
+        image: json["urlToImage"]);
   }
 }
