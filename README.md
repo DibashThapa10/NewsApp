@@ -2,15 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+## Moru Digital/Flutter Internship Task
 
-This project is a starting point for a Flutter application.
+Some screenshot of  a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![homepage](https://user-images.githubusercontent.com/70568797/180023014-f4824353-60d3-4c4d-abc7-da47d7f98225.png)
+![splashscreen](https://user-images.githubusercontent.com/70568797/180023404-97d202fc-2bef-4f20-bef3-f694cb426278.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
