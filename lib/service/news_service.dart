@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
-import 'package:newsapp/model/newsmodel.dart';
+import 'package:newsapp/model/news_model.dart';
 
 class NewsService {
   String endpoint = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=42dd21edf39342bb80474f9b3efe6bb8';
