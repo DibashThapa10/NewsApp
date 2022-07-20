@@ -48,10 +48,11 @@ class _SplashScreenState extends State<SplashScreen> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
+                      Navigator.pushAndRemoveUntil(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => const Homepage()));
+                          CupertinoPageRoute(
+                              builder: (context) => const Homepage()),
+                          (route) => false);
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
