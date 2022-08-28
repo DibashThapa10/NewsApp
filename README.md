@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Moru Digital/Flutter Internship Task
+
 
 Some screenshot of  a Flutter application.
 
